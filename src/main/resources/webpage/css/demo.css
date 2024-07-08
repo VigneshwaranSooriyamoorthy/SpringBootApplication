@@ -1,0 +1,26 @@
+h1 {
+  color: #15df8d;
+  text-align: center;
+}
+.user-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.user-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  max-width: 250px;
+}
+.user-form label {
+  flex: 1;
+}
+.user-form-input {
+  flex: 2;
+  max-width: 150px;
+}
+.summary div {
+  margin-bottom: 5px;
+}
