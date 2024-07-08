@@ -38,14 +38,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Product Structure
 ### Backend Service
-- [Spring Boot application](src\main\java\com\example\demo\DemoApplication.java)
-- [Data injection](src\main\java\com\example\demo\LoadSampleData.java)
-- [Spring Boot Entity ~ DB table equivalent](src\main\java\com\example\demo\User.java)
-- [Rest endpoint controller](src\main\java\com\example\demo\UserController.java)
-- [Data repository handler](src\main\java\com\example\demo\UserRepository.java)
-- [Spring Boot property file](src\main\resources\application.properties)
+- [Spring Boot application](./src/main/java/com/example/demo/DemoApplication.java)
+- [Data injection](./src/main/java/com/example/demo/LoadSampleData.java)
+- [Spring Boot Entity ~ DB table equivalent](./src/main/java/com/example/demo/User.java)
+- [Rest endpoint controller](./src/main/java/com/example/demo/UserController.java)
+- [Data repository handler](./src/main/java/com/example/demo/UserRepository.java)
+- [Spring Boot property file](./src/main/resources/application.properties)
 
 ### Frontend
-- [Webpage HTML](src\main\resources\static\webpage\demo.html)
-- [Support CSS](src\main\resources\static\webpage\css\demo.css)
-- [Support script](src\main\resources\static\webpage\js\post-user-info.js)
+- [Webpage HTML](./src/main/resources/static/webpage/demo.html)
+- [Support CSS](./src/main/resources/static/webpage/css/demo.css)
+- [Support script](./src/main/resources/static/webpage/js/post-user-info.js)
