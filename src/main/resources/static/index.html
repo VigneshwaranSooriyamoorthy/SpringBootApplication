@@ -2,46 +2,24 @@
 <html lang="en">
   <head>
     <title>User Details</title>
-    <link rel="stylesheet" href="webpage/css/demo.css" />
-    <script type="text/javascript" src="webpage/js/post-user-info.js"></script>
+    <meta http-equiv="refresh" content="10;webpage/demo.html" />
   </head>
   <body>
-    <h1>Hello, this Alpha! Welcome.</h1>
-    <h3>Please fill in below information</h3>
-    <div class="user-form">
-      <div>
-        <label for="fname">First name:</label>
-        <input class="user-form-input" type="text" id="fname" />
-      </div>
-      <div>
-        <label for="lname">Last name:</label>
-        <input class="user-form-input" type="text" id="lname" />
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input class="user-form-input" type="text" id="email" />
-      </div>
-      <div>
-        <label for="address">Address:</label>
-        <input class="user-form-input" type="text" id="address" /><br />
-      </div>
-    </div>
-    <button type="button" onclick="processUserInformation()">SUBMIT</button>
-    <br />
-    <br />
-    <div class="summary">
-      <div>
-        <label for="fname" id="summary-fname"></label>
-      </div>
-      <div>
-        <label for="lname" id="summary-lname"></label>
-      </div>
-      <div>
-        <label for="email" id="summary-email"></label>
-      </div>
-      <div>
-        <label for="address" id="summary-address"></label>
-      </div>
-    </div>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      h1 {
+        color: darkgreen;
+        text-align: center;
+      }
+    </style>
+    <h1>Hello, this is the Spring Boot welcome page</h1>
+    <br>
+    <h3>Source file is located at src\main\resources\static\index.html</h3>
+    <h3>You will be automatically redirected to the application webpage in 10 seconds</h3>
+    <h3>You can also skip the wait time by clicking
+      <a href="webpage/demo.html">here</a>
+    </h3>
   </body>
 </html>

@@ -1,5 +1,9 @@
+body {
+  background-color: lightgray;
+}
+
 h1 {
-  color: #15df8d;
+  color: darkgreen;
   text-align: center;
 }
 .user-form {

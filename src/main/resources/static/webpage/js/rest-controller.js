@@ -1,30 +1,37 @@
 function processUserInformation() {
   postUserInformation().then((id) => {
-    resetPage();
-    updateSummary(id);
+    if (id) {
+      resetPage();
+      updateSummary(id);
+    }
   });
 }
 
-function postUserInformation() {
+async function postUserInformation() {
   let firstName = document.getElementById("fname").value;
   let lastName = document.getElementById("lname").value;
   let email = document.getElementById("email").value;
   let address = document.getElementById("address").value;
-
-  return fetch("http://localhost:8080/new-user", {
-    method: "POST",
-    body: JSON.stringify({
-      fname: firstName,
-      lname: lastName,
-      email: email,
-      address: address,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => json.id);
+  
+  if (!(firstName && lastName && email && address)) {
+    alert("Make sure all fields are filled");
+    return 0;
+  } else {
+    return fetch("http://localhost:8080/new-user", {
+      method: "POST",
+      body: JSON.stringify({
+        fname: firstName,
+        lname: lastName,
+        email: email,
+        address: address,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => json.id);
+  }
 }
 
 function updateSummary(id) {
