@@ -32,10 +32,12 @@ These instructions will get you a copy of the project up and running on your loc
 ### Usage
 - Clone repository `git clone https://github.com/VigneshwaranSooriyamoorthy/SpringBootApplication.git`
 - `mvn clean install` to syncronize all dependencies
-- Make sure to enable TCP/IP protocol from SQl Server Configuration Manager
+- Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
 - Open 'Spring Boot Dashboard'
 - Run 'demo' application
 - Navigate to http://localhost:8080 to access the webpage
+![Welcome Page](./src/main/resources/static/Welcome%20Page.png)
+![Application](./src/main/resources/static/Application%20Page.png)
 
 ## Product Structure
 ### Backend Service
