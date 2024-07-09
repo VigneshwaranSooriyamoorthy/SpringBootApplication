@@ -3,6 +3,7 @@
   <head>
     <title>User Details</title>
     <meta http-equiv="refresh" content="10;webpage/demo.html" />
+    <script type="text/javascript" src="webpage/js/timer.js"></script>
   </head>
   <body>
     <style>
@@ -15,10 +16,13 @@
       }
     </style>
     <h1>Hello, this is the Spring Boot welcome page</h1>
-    <br>
+    <br />
     <h3>Source file is located at src\main\resources\static\index.html</h3>
-    <h3>You will be automatically redirected to the application webpage in 10 seconds</h3>
-    <h3>You can also skip the wait time by clicking
+    <h3 id="timer">
+      You will be automatically redirected to the application webpage in 10 seconds
+    </h3>
+    <h3>
+      You can also skip the wait time by clicking
       <a href="webpage/demo.html">here</a>
     </h3>
   </body>

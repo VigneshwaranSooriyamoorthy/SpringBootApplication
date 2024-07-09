@@ -13,8 +13,19 @@ async function postUserInformation() {
   let email = document.getElementById("email").value;
   let address = document.getElementById("address").value;
   
-  if (!(firstName && lastName && email && address)) {
-    alert("Make sure all fields are filled");
+  var alertMessage = '';
+
+  if (!(firstName && lastName && email)) {
+    if (!firstName) {
+      alertMessage += 'Kindly fill "First name"\n';
+    }
+    if (!lastName) {
+      alertMessage += 'Kindly fill "Last name"\n';
+    }
+    if (!email) {
+      alertMessage += 'Kindly fill "Email"\n';
+    }
+    alert(alertMessage.trim());
     return 0;
   } else {
     return fetch("http://localhost:8080/new-user", {
@@ -48,8 +59,8 @@ function updateSummary(id) {
 }
 
 function resetPage() {
-  document.getElementById("fname").value = "";
-  document.getElementById("lname").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("address").value = "";
+  document.getElementById("fname").value = '';
+  document.getElementById("lname").value = '';
+  document.getElementById("email").value = '';
+  document.getElementById("address").value = '';
 }
