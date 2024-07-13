@@ -37,9 +37,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Navigate to http://localhost:8080 to access the webpage
 ![Welcome Page](./src/main/resources/static/Welcome%20Page.png)
 ![Application](./src/main/resources/static/Application%20Page.png)
-<br>
-<br>
-- <u>Only for MS SQL Server</u> - Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
+- Only for MS SQL Server - Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
 
 ## Product Structure
 ### Backend Service
