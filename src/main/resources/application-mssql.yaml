@@ -1,0 +1,12 @@
+spring:
+    jpa:
+        properties:
+            hibernate:
+                format-sql: true
+                dialect: org.hibernate.dialect.SQLServerDialect
+                ddl-auto: update
+
+    datasource:
+        url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=springboot_demo
+        username: sa
+        password: SQL@#2k23

@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: demo
+
+    # Profiles
+    # mssql - Connect MS SQL Server
+    # h2 - Connect H2 database
+
+    profiles:
+      include: h2
