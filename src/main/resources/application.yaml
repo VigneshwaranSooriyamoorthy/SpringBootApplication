@@ -3,8 +3,8 @@ spring:
         name: demo
 
     # Profiles
-    # mssql - Connect MS SQL Server
     # h2 - Connect H2 database
+    # mssql - Connect MS SQL Server
 
     profiles:
       include: h2

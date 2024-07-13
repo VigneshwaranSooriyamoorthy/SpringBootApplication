@@ -32,12 +32,14 @@ These instructions will get you a copy of the project up and running on your loc
 ### Usage
 - Clone repository `git clone https://github.com/VigneshwaranSooriyamoorthy/SpringBootApplication.git`
 - `mvn clean install` to syncronize all dependencies
-- Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
 - Open 'Spring Boot Dashboard'
 - Run 'demo' application
 - Navigate to http://localhost:8080 to access the webpage
 ![Welcome Page](./src/main/resources/static/Welcome%20Page.png)
 ![Application](./src/main/resources/static/Application%20Page.png)
+<br>
+<br>
+- <u>Only for MS SQL Server</u> - Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
 
 ## Product Structure
 ### Backend Service
@@ -46,7 +48,9 @@ These instructions will get you a copy of the project up and running on your loc
 - [Spring Boot Entity ~ DB table equivalent](./src/main/java/com/example/demo/User.java)
 - [Rest endpoint controller](./src/main/java/com/example/demo/UserController.java)
 - [Data repository handler](./src/main/java/com/example/demo/UserRepository.java)
-- [Spring Boot property file](./src/main/resources/application.properties)
+- [Spring Boot property file](./src/main/resources/application.yaml)
+- [Spring Boot property file for H2](./src/main/resources/application-h2.yaml)
+- [Spring Boot property file for MS SQL Server](./src/main/resources/application-mssql.yaml)
 
 ### Frontend
 - [Webpage HTML](./src/main/resources/static/webpage/demo.html)
