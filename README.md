@@ -2,13 +2,11 @@
 This is a simple Spring Boot application prepared for basic learning purpose.
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 - Java 8 or later [Currently I am using Java 17]
 - IDE (VS Code, IntelliJ, or any)
-- Microsoft SQL Server
 
 ### Installation
 #### Key VS Code extension
@@ -40,12 +38,12 @@ These instructions will get you a copy of the project up and running on your loc
 - Only for MS SQL Server - Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQL%20Server%20Configuration%20Manager.png)
 
 ## Product Structure
-### Backend Service
+### Backend
 - [Spring Boot application](./src/main/java/com/example/demo/DemoApplication.java)
-- [Data injection](./src/main/java/com/example/demo/LoadSampleData.java)
+- [Data injection (Optional)](./src/main/java/com/example/demo/LoadSampleData.java)
 - [Spring Boot Entity ~ DB table equivalent](./src/main/java/com/example/demo/User.java)
 - [Rest endpoint controller](./src/main/java/com/example/demo/UserController.java)
-- [Data repository handler](./src/main/java/com/example/demo/UserRepository.java)
+- [Repository handler](./src/main/java/com/example/demo/UserRepository.java)
 - [Spring Boot property file](./src/main/resources/application.yaml)
 - [Spring Boot property file for H2](./src/main/resources/application-h2.yaml)
 - [Spring Boot property file for MS SQL Server](./src/main/resources/application-mssql.yaml)
