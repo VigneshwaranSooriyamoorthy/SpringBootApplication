@@ -16,35 +16,35 @@ These instructions will get you a copy of the project up and running on your loc
 #### Key VS Code extension
 
 - Java Support
-  - Language Support for Java(TM) by Red Hat
-  - Project Manager for Java
-  - Extension Pack for Java
-  - Debugger for Java
-  - Maven for Java
+    - Language Support for Java(TM) by Red Hat
+    - Project Manager for Java
+    - Extension Pack for Java
+    - Debugger for Java
+    - Maven for Java
 - Spring Boot
-  - Spring Boot Dashboard
-  - Spring Boot Extension Pack
-  - Spring Boot Tools
-  - Spring Initializr Java Support
+    - Spring Boot Dashboard
+    - Spring Boot Extension Pack
+    - Spring Boot Tools
+    - Spring Initializr Java Support
 - Testing
-  - Cucumber
+    - Cucumber
 - General
-  - XML
-  - IntelliCode
-  - Code Runner
-  - Prettier - Code formatter
+    - XML
+    - IntelliCode
+    - Code Runner
+    - Prettier - Code formatter
 
-### Usage
+## Usage
 
 - Clone repository `git clone https://github.com/VigneshwaranSooriyamoorthy/SpringBootApplication.git`
-- `mvn clean install` to synchronize all dependencies
-- To skip tests `mvn clean install -DskipTests`
+- `mvn clean install` to synchronize all dependencies, to skip tests `mvn clean install -DskipTests`
 - Open 'Spring Boot Dashboard'
 - Run 'demo' application
 - Navigate to http://localhost:8080 to access the webpage
   ![Welcome Page](./src/main/resources/static/WelcomePage.png)
   ![Application](./src/main/resources/static/ApplicationPage.png)
-- Only for MS SQL Server - Make sure to enable TCP/IP protocol from SQl Server Configuration Manager ![Application](./src/main/resources/static/SQLServerConfigurationManager.png)
+- Only for MS SQL Server - Make sure to enable TCP/IP protocol from SQl Server Configuration
+  Manager ![Application](./src/main/resources/static/SQLServerConfigurationManager.png)
 
 ## Product Structure
 
@@ -72,30 +72,30 @@ These instructions will get you a copy of the project up and running on your loc
 - [Test runner class - Java application](./src/test/java/com/example/demo/DemoApplicationTests.java)
 - [JUnit - Cucumber runner class](./src/test/java/com/example/demo/cucumber/CucumberRunnerTest.java)
 
-> Test Execution
+## Test Execution
 
 - As Java application
-  - `java -cp <classpath> com.example.demo.DemoApplicationTests`
-  - IntelliJ
-    - Open the java file
-    - Use the runner button (Ctrl+Shift+F10)
-      ![Run Java application](./src/test/resources/documentation/IntelliJ/RunJavaApplication.png)
-  - VS Code
-    - Open the java file
-    - Right click > Run Java OR Use 'Run | Debug' (Ctrl+Shift+D)
-      ![Run Java application](./src/test/resources/documentation/VSCode/RunJavaApplication.png)
+    - `java -cp <classpath> com.example.demo.DemoApplicationTests`
+    - VS Code
+        - Open the java file
+        - Right click > Run Java OR Use 'Run | Debug' (Ctrl+Shift+D)
+          ![Run Java application](./src/test/resources/documentation/VSCode/RunJavaApplication.png)
+    - IntelliJ
+        - Open the java file
+        - Use the runner button (Ctrl+Shift+F10)
+          ![Run Java application](./src/test/resources/documentation/IntelliJ/RunJavaApplication.png)
 - As JUnit
-  - IntelliJ
-    - Open the junit runner file
-    - Use the runner button (Ctrl+Shift+F10)
-      ![Run JUnit tests](./src/test/resources/documentation/IntelliJ/RunJUnitTests.png)
-  - VS Code
-    - Open the junit runner file
-    - Use runner button OR 'Testing' sidebar
-      ![Run Java application](./src/test/resources/documentation/VSCode/RunJUnitTests.png)
+    - VS Code
+        - Open the junit runner file
+        - Use runner button OR 'Testing' sidebar
+          ![Run Java application](./src/test/resources/documentation/VSCode/RunJUnitTests.png)
+    - IntelliJ
+        - Open the junit runner file
+        - Use the runner button (Ctrl+Shift+F10)
+          ![Run JUnit tests](./src/test/resources/documentation/IntelliJ/RunJUnitTests.png)
 - As Maven
-  - `mvn test`
-  - IntelliJ
-    ![Maven Test](./src/test/resources/documentation/IntelliJ/MavenTest.png)
-  - VS Code
-    ![Maven Test](./src/test/resources/documentation/VSCode/MavenTest.png)
+    - `mvn test`
+    - VS Code
+      ![Maven Test](./src/test/resources/documentation/VSCode/MavenTest.png)
+    - IntelliJ
+      ![Maven Test](./src/test/resources/documentation/IntelliJ/MavenTest.png)
