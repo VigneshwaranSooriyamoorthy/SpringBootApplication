@@ -15,6 +15,7 @@ public class BrowserManager {
 
     public void initializeBrowser() {
         playwright = Playwright.create();
+        playwright.selectors().setTestIdAttribute("data-test-id");
         browser = playwright.chromium().launch(
                 new BrowserType.LaunchOptions()
                         .setHeadless(false)

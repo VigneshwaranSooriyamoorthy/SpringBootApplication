@@ -38,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Clone repository `git clone https://github.com/VigneshwaranSooriyamoorthy/SpringBootApplication.git`
 - `mvn clean install` to synchronize all dependencies, to skip tests `mvn clean install -DskipTests`
-- Open 'Spring Boot Dashboard'
+- Open 'Spring Boot Dashboard' (VS Code)
 - Run 'demo' application
 - Navigate to http://localhost:8080 to access the webpage
   ![Welcome Page](./src/main/resources/static/WelcomePage.png)
@@ -85,6 +85,7 @@ These instructions will get you a copy of the project up and running on your loc
         - Use the runner button (Ctrl+Shift+F10)
           ![Run Java application](./src/test/resources/documentation/IntelliJ/RunJavaApplication.png)
 - As JUnit
+    <a name="vscode-junit-runner"></a>
     - VS Code
         - Open the junit runner file
         - Use runner button OR 'Testing' sidebar
@@ -99,3 +100,10 @@ These instructions will get you a copy of the project up and running on your loc
       ![Maven Test](./src/test/resources/documentation/VSCode/MavenTest.png)
     - IntelliJ
       ![Maven Test](./src/test/resources/documentation/IntelliJ/MavenTest.png)
+- To debug a specific test scenario
+    - VS Code
+        - Add any new tag to the test scenario
+        - Update the parameter FILTER_TAGS_PROPERTY_NAME of [JUnit - Cucumber runner class](./src/test/java/com/example/demo/cucumber/CucumberRunnerTest.java)
+        - Run CucumberRunnerTest (Refer section [Test Execution](#vscode-junit-runner))
+    - IntelliJ (Easy approach)
+        - Use the 'Run Test' icon displayed near to the scenario
